@@ -347,7 +347,8 @@ const handleImagePress1 = (index) => {
       source={require('../../../assets/m11.webp')}
       style={styles.iconImage}
     />
-    <Text style={styles.text}>بازار مە هەمی یا کوم ڤەکری ژ بوتە</Text>
+    <Text style={styles.text}>All market items are available
+</Text>
   </View>
   </LinearGradient>
   </View>
@@ -375,105 +376,106 @@ const handleImagePress1 = (index) => {
 
   <View>
 
-    {/* ROW 1 */}
-    <View style={styles.row1}>
+{/* ROW 1 */}
+<View style={styles.row1}>
 
-<TouchableOpacity onPress={() => navigation.navigate('Homelaptop')}>
-      <View style={styles.item}>
-        <View style={styles.imageButton}>
-          <Image source={require('../../../assets/m20.png')} style={styles.iconImage1} />
-        </View>
-        <Text style={styles.imageText}>کومپیوتەر</Text>
+  <TouchableOpacity onPress={() => navigation.navigate('Homelaptop')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m20.png')} style={styles.iconImage1} />
       </View>
-</TouchableOpacity>
-
-<TouchableOpacity onPress={() => navigation.navigate('HomeClothes')}>
-      <View style={styles.item}>
-        <View style={styles.imageButton}>
-          <Image source={require('../../../assets/m21.png')} style={styles.iconImage1} />
-        </View>
-        <Text style={styles.imageText}>جلوبەرگ</Text>
-      </View>
-</TouchableOpacity>
-
-<TouchableOpacity onPress={() => navigation.navigate('Homeshoes')}>
-      <View style={styles.item}>
-        <View style={styles.imageButton}>
-          <Image source={require('../../../assets/m22.webp')} style={styles.iconImage1} />
-        </View>
-        <Text style={styles.imageText}>پێلاڤ</Text>
-      </View>
-</TouchableOpacity>
-
-<TouchableOpacity onPress={() => navigation.navigate('Homeindustry')}>
-      <View style={styles.item}>
-        <View style={styles.imageButton}>
-          <Image source={require('../../../assets/m23.png')} style={styles.iconImage1} />
-        </View>
-        <Text style={styles.imageText}>دروسکەر</Text>
-      </View>
-</TouchableOpacity>
-
-<TouchableOpacity onPress={() => navigation.navigate('Homesport')}>
-      <View style={styles.item}>
-        <View style={styles.imageButton}>
-          <Image source={require('../../../assets/m26.png')} style={styles.iconImage1} />
-        </View>
-        <Text style={styles.imageText}>وەرزشی</Text>
-      </View>
-</TouchableOpacity>
-
+      <Text style={styles.imageText}>Computer</Text>
     </View>
+  </TouchableOpacity>
 
-    {/* ROW 2 */}
-    <View style={styles.row1}>
-
-<TouchableOpacity onPress={() => navigation.navigate('Homemarket')}>
-  <View style={styles.item}>
-    <View style={styles.imageButton}>
-      <Image source={require('../../../assets/m24.webp')} style={styles.iconImage1} />
+  <TouchableOpacity onPress={() => navigation.navigate('HomeClothes')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m21.png')} style={styles.iconImage1} />
+      </View>
+      <Text style={styles.imageText}>Clothes</Text>
     </View>
-    <Text style={styles.imageText}>مارکێت</Text>
-  </View>
-</TouchableOpacity>
+  </TouchableOpacity>
 
-<TouchableOpacity onPress={() => navigation.navigate('Homeoil')}>
-      <View style={styles.item}>
-        <View style={styles.imageButton}>
-          <Image source={require('../../../assets/m25.png')} style={styles.iconImage1} />
-        </View>
-        <Text style={styles.imageText}>پانزینخانە</Text>
+  <TouchableOpacity onPress={() => navigation.navigate('Homeshoes')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m22.webp')} style={styles.iconImage1} />
       </View>
-</TouchableOpacity>
-
-<TouchableOpacity onPress={() => navigation.navigate('Homepaper')}>
-      <View style={styles.item}>
-        <View style={styles.imageButton}>
-          <Image source={require('../../../assets/m27.webp')} style={styles.iconImage1} />
-        </View>
-        <Text style={styles.imageText}>پەرگە</Text>
-      </View>
-</TouchableOpacity>
-
-<TouchableOpacity onPress={() => navigation.navigate('Homefly')}>
-      <View style={styles.item}>
-        <View style={styles.imageButton}>
-          <Image source={require('../../../assets/m28.png')} style={styles.iconImage1} />
-        </View>
-        <Text style={styles.imageText}>فروکەڤانی</Text>
-      </View>
-</TouchableOpacity>
-
-<TouchableOpacity onPress={() => navigation.navigate('Homehotel')}>
-      <View style={styles.item}>
-        <View style={styles.imageButton}>
-          <Image source={require('../../../assets/m29.webp')} style={styles.iconImage1} />
-        </View>
-        <Text style={styles.imageText}>هوتێل</Text>
-      </View>
-</TouchableOpacity>
-
+      <Text style={styles.imageText}>Shoes</Text>
     </View>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Homeindustry')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m23.png')} style={styles.iconImage1} />
+      </View>
+      <Text style={styles.imageText}>Industrial</Text>
+    </View>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Homesport')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m26.png')} style={styles.iconImage1} />
+      </View>
+      <Text style={styles.imageText}>Sports</Text>
+    </View>
+  </TouchableOpacity>
+
+</View>
+
+{/* ROW 2 */}
+<View style={styles.row1}>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Homemarket')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m24.webp')} style={styles.iconImage1} />
+      </View>
+      <Text style={styles.imageText}>Market</Text>
+    </View>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Homeoil')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m25.png')} style={styles.iconImage1} />
+      </View>
+      <Text style={styles.imageText}>Gas Station</Text>
+    </View>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Homepaper')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m27.webp')} style={styles.iconImage1} />
+      </View>
+      <Text style={styles.imageText}>Paper</Text>
+    </View>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Homefly')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m28.png')} style={styles.iconImage1} />
+      </View>
+      <Text style={styles.imageText}>Flights</Text>
+    </View>
+  </TouchableOpacity>
+
+  <TouchableOpacity onPress={() => navigation.navigate('Homehotel')}>
+    <View style={styles.item}>
+      <View style={styles.imageButton}>
+        <Image source={require('../../../assets/m29.webp')} style={styles.iconImage1} />
+      </View>
+      <Text style={styles.imageText}>Hotel</Text>
+    </View>
+  </TouchableOpacity>
+
+</View>
+
 
   </View>
 
@@ -576,7 +578,7 @@ const handleImagePress1 = (index) => {
   >
     
     <View style={styles.rowContainer00}>
-    <Text style={styles.texta}>پێشانگەهێن موبیلیاتا</Text>
+    <Text style={styles.texta}>Mobilyat Showcase</Text>
   </View>
   </LinearGradient>
   </View>
@@ -589,7 +591,7 @@ const handleImagePress1 = (index) => {
 
 
 
-{/* mobilyat */}
+{/* mobile and tv */}
 <View style={styles.mobilyatWrapper}>
   {/* item */}
 
@@ -605,7 +607,7 @@ const handleImagePress1 = (index) => {
       end={{ x: 1, y: 0 }}
       style={styles.vm2}
     >
-      <Text style={styles.textaq}>پێشانگەهێن موبایلا</Text>
+      <Text style={styles.textaq}>Mobile Showcase</Text>
     </LinearGradient>
   </View>
 </TouchableOpacity>
@@ -622,12 +624,13 @@ const handleImagePress1 = (index) => {
       end={{ x: 1, y: 0 }}
       style={styles.vm2}
     >
-      <Text style={styles.textaq}>پێشانگەهێن Tv سمارت</Text>
+      <Text style={styles.textaq}>Smart TV Showcase
+</Text>
     </LinearGradient>
   </View>
   </TouchableOpacity>
 </View>
-{/* mobilyat */}
+{/* {/* mobile and tv */} 
 
 
 
@@ -682,7 +685,7 @@ const handleImagePress1 = (index) => {
        
           <Image source={require('../../../assets/m62.png')} style={styles.iconImage12} />
         
-        <Text style={styles.imageText2}>جوانکاریێن ئافرەتان</Text>
+        <Text style={styles.imageText2}>Beauty Salon</Text>
       </View>
 </TouchableOpacity>
 
@@ -691,7 +694,7 @@ const handleImagePress1 = (index) => {
        
           <Image source={require('../../../assets/m63.png')} style={styles.iconImage12} />
         
-        <Text style={styles.imageText2}>هۆڵێن شەهیانا</Text>
+        <Text style={styles.imageText2}>Wedding Hall</Text>
       </View>
 </TouchableOpacity>
 
@@ -700,7 +703,7 @@ const handleImagePress1 = (index) => {
        
           <Image source={require('../../../assets/m64.png')} style={styles.iconImage12} />
         
-        <Text style={styles.imageText2}>کراسێن بیکا</Text>
+        <Text style={styles.imageText2}>Wedding Dress</Text>
       </View>
 
 </TouchableOpacity>
@@ -823,7 +826,7 @@ const handleImagePress1 = (index) => {
   fontSize:RFPercentage(2.5),
   textAlign:'center',
   marginTop: isTablet ? hp("2%") : hp("1%"),
-}}>جیهانا زاروکا</Text>
+}}>Kids World</Text>
 </View>
 </TouchableOpacity>
 {/* zarok */}
@@ -852,7 +855,7 @@ const handleImagePress1 = (index) => {
     style={styles.cardIcon}
   />
   <Text style={styles.cardTitle}>
-ترومبێل
+Car
   </Text>
 </View>
 
@@ -872,7 +875,7 @@ const handleImagePress1 = (index) => {
     style={styles.cardIcon}
   />
   <Text style={styles.cardTitle}>
-   ئەرد و خانی
+   House
   </Text>
 </View>
   </LinearGradient>
@@ -904,7 +907,8 @@ const handleImagePress1 = (index) => {
     style={styles.cardIcon}
   />
   <Text style={styles.cardTitle}>
-جیهانا دەمژمێرا
+Watch World
+
   </Text>
 </View>
 
@@ -924,7 +928,8 @@ const handleImagePress1 = (index) => {
     style={styles.cardIcon}
   />
   <Text style={styles.cardTitle}>
-    ناف مالی
+   Homehome
+
   </Text>
 </View>
   </LinearGradient>

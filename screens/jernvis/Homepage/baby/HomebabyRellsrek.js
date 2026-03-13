@@ -95,7 +95,7 @@ export default function HomebabyRellsrek({ navigation, route }) {
                 <View style={styles.userTextBox}>
 
                   <View style={styles.nameRow}>
-                    <Text style={styles.username}>Laptop Duhok</Text>
+                    <Text style={styles.username}>Name English Shop</Text>
                     <MaterialCommunityIcons
                       name="check-decagram"
                       size={20}
@@ -108,7 +108,7 @@ export default function HomebabyRellsrek({ navigation, route }) {
                   <Text
                     style={styles.subText}
                   >
-                    ئەگەر دەتەوێت باشترین لەپتۆپ بەدەستبهێنی لە دۆزینەوەکەتدا، کلیل لەسەر "زیاتر" بکە بۆ بینینی هەموو زانیارییەکان.
+                    Description rells,Description rells,Description rells,Description rells,Description rells,Description rells,Description rells,
 
                   </Text>
 

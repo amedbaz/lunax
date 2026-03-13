@@ -413,7 +413,7 @@ borderRadius:isTablet ? 50 : 30,
 
   <View style={styles.card1}>
  <Text style={styles.text}>
-  ئەم لاپتوپە بە حالەت نوێ و بەردەستە و دەتوانرێت بۆ کارەکانى فەرمی و گرافیکی بەکار بێت. بۆ زانیاری زیاتر پەیوەندی بکەن.
+  Description image and details,Description image and details,Description image and details,Description image and details,
     </Text>
 
 </View>

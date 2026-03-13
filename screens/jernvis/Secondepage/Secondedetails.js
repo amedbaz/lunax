@@ -217,7 +217,7 @@ const finalAmount = (totalAmount * selectedPercent) / 100;
   </View>
 
 <View style={styles.logoRow}>
-   <Text style={styles.logoText1}>پێشانگەها لاپتوپ دهۆک</Text>
+   <Text style={styles.logoText1}>Name Kurdish Shop</Text>
   <Image
     source={require('../../../assets/m503.webp')}
     style={styles.logoa1}
@@ -226,7 +226,7 @@ const finalAmount = (totalAmount * selectedPercent) / 100;
 </View>
 
 <View style={styles.logoRow1}>
-<Text style={styles.logoText2}>پێشانگەها لاپتوپ دهۆک یا فروتنا هەمی جورێن کومپیوتەر و لاپتوپانە دگەل سەخبێریکرنێ ب باشترین شێواز و ئەرزانترین بها</Text>
+<Text style={styles.logoText2}>Description logo and description,Description logo and description,Description logo and description,Description logo and description,</Text>
 </View>
 
 </View>
@@ -446,7 +446,7 @@ borderRadius:isTablet ? 50 : 30,
 
   <View style={styles.card1}>
  <Text style={styles.text}>
-  ئەم لاپتوپە بە حالەت نوێ و بەردەستە و دەتوانرێت بۆ کارەکانى فەرمی و گرافیکی بەکار بێت. بۆ زانیاری زیاتر پەیوەندی بکەن.
+  Description image and details,Description image and details,Description image and details,Description image and details,
     </Text>
 
 </View>

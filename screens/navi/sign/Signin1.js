@@ -41,7 +41,7 @@ const Signin1 = ({navigation}) => {
       <View style={styles.inputRow}>
         <Ionicons name="call-outline" size={22} color="#555" />
         <TextInput
-          placeholder="ژمارا موبایلێ"
+          placeholder="Number Phone"
           placeholderTextColor="#999"
           style={styles.input}
           textAlign="right"
@@ -52,7 +52,7 @@ const Signin1 = ({navigation}) => {
       <View style={styles.inputRow}>
         <Ionicons name="lock-closed-outline" size={22} color="#555" />
         <TextInput
-          placeholder="وشەیا نهێنی"
+          placeholder="Password"
           placeholderTextColor="#999"
           secureTextEntry={!passwordVisible}
           style={styles.input}
@@ -69,18 +69,18 @@ const Signin1 = ({navigation}) => {
 
       {/* Forget password */}
       <TouchableOpacity style={styles.forgetBtn} onPress={()=>navigation.navigate("ForgetPassword")}>
-        <Text style={styles.forgetText}>ژبیرچوونا وشەیا نهێنی؟</Text>
+        <Text style={styles.forgetText}>Forget Password</Text>
       </TouchableOpacity>
 
       {/* Login Button */}
       <TouchableOpacity style={styles.loginBtn}>
-        <Text style={styles.loginText}>چوونا ژوور</Text>
+        <Text style={styles.loginText}>Login</Text>
       </TouchableOpacity>
 
       {/* Create account */}
       <TouchableOpacity style={styles.createAccount} onPress={()=>navigation.navigate("Signup")}>
         <Text style={styles.createText}>
-           هەژمارنینە؟ <Text style={{ color: 'rgb(236, 134, 0)' }}>هەژمارێ دروست بکە</Text>
+            <Text style={{ color: 'rgb(236, 134, 0)' }}>signup</Text>
         </Text>
       </TouchableOpacity>
 

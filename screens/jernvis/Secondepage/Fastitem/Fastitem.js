@@ -27,16 +27,16 @@ const phoneNumber = "9647508672721"; // ژمارە (بێ +)
   };
 const data = {
   'لاپتوپ': [
-    { id: 1, title: 'Laptop 1', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
-    { id: 2, title: 'Laptop 2', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
-    { id: 3, title: 'Laptop 3', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
-    { id: 4, title: 'Laptop 4', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
-    { id: 5, title: 'Laptop 5', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
-    { id: 6, title: 'Laptop 6', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
-    { id: 7, title: 'Laptop 7', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
-    { id: 8, title: 'Laptop 8', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
-    { id: 9, title: 'Laptop 9', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
-    { id: 10, title: 'Laptop 10', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 1, title: 'Name Prudact 1', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 2, title: 'Name Prudact 2', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 3, title: 'Name Prudact 3', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 4, title: 'Name Prudact 4', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 5, title: 'Name Prudact 5', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 6, title: 'Name Prudact 6', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 7, title: 'Name Prudact 7', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 8, title: 'Name Prudact 8', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 9, title: 'Name Prudact 9', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
+    { id: 10, title: 'Name Prudact 10', img: require('../../../../assets/m600.jpg'),img1: require('../../../../assets/m202.png') },
   ],}
 export default function Fastitem({ navigation, route }) {
     

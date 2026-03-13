@@ -68,7 +68,7 @@ const FavoriteScreen = ({ navigation }) => {
 
   return (
     <View style={styles.centeredView}>
-      <Text style={styles.headerText}>دلخۆازا تە</Text>
+      <Text style={styles.headerText}>Favorite</Text>
 
       {favoriteList.length > 0 && (
         <TouchableOpacity onPress={handleRemoveAllFavorites}>

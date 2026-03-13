@@ -73,7 +73,7 @@ const GRADIENTS = [
 // 🔥 THEN: data
 const DATA = Array.from({ length: 20 }).map((_, i) => ({
   id: i.toString(),
-  title: `Laptop Duhok ${i + 1}`,
+  title: `Name English Shop ${i + 1}`,
   subtitle: 'Excellent Service',
   iconImage: require('../../../../assets/m202.png'),
 
@@ -150,7 +150,7 @@ const CardItem = ({ item }) => {
              <Text style={{ fontSize: RFPercentage(3), color: '#000', marginTop:isTablet ? wp("-2.5%") : wp("3%"), textAlign: 'center',
                 fontWeight: 'bold',fontFamily: 'k24',
               }}>
-               پێشەزازیا ترومبێلا
+              Automotive Industry
              </Text>
            </TouchableOpacity>
 
@@ -195,7 +195,7 @@ const CardItem = ({ item }) => {
          source={require('../../../../assets/m23.png')}
          style={styles.iconImage}
        />
-       <Text style={styles.text}>باشترین دێ ب دەستتەکەڤن</Text>
+       <Text style={styles.text}>The best you can get</Text>
      </View>
      </LinearGradient>
      </View>

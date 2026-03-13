@@ -35,7 +35,7 @@ export default function Signup({ navigation }) {
   const hasLetter = /[A-Za-z]/.test(password);
   const hasNumber = /[0-9]/.test(password);
   const hasSymbol = /[@$!%*#?&]/.test(password);
-  const hasLength = password.length >= 6;
+  const hasLength = password.length >= 8;
 
   const passwordValid = hasLetter && hasNumber && hasSymbol && hasLength;
 
@@ -48,21 +48,25 @@ export default function Signup({ navigation }) {
 
   const handleSignup = () => {
     if (!name || !phone || !email || !password || !confirm) {
-      Alert.alert('هەڵە', 'هیڤیە هەمی خانە بهێنە پرکرن');
+      Alert.alert('Error', 'Please fill in all fields.');
+
       return;
     }
 
     if (!passwordValid) {
-      Alert.alert('وشەیا نهێمی یا لاوازە', 'هیڤیە هەمی مەرج بهێنە جێبەجێکرن');
+     Alert.alert('Weak Password', 'Please meet all the requirements.');
+
       return;
     }
 
     if (password !== confirm) {
-      Alert.alert('هەڵە', 'وشەی نهێنی یەکسان نییە');
+    Alert.alert('Error', 'Passwords do not match.');
+
       return;
     }
 
-    Alert.alert('سەرکەفتیبی 🎉', 'هەژمار دروستبوو');
+   Alert.alert('Success 🎉', 'Account created successfully.');
+
   };
 
   return (
@@ -78,13 +82,13 @@ export default function Signup({ navigation }) {
         <Ionicons name="arrow-back" size={22} color="#fff" />
       </TouchableOpacity>
 
-      <Text style={styles.title}>دروستکرنا هەژمارێ</Text>
+      <Text style={styles.title}>Create Account</Text>
 
       {/* Name */}
       <View style={inputStyle(name)}>
         <Ionicons name="person-outline" size={22} color="#555" />
         <TextInput
-          placeholder="ناڤێ دووانی"
+          placeholder="Name"
           style={styles.input}
           textAlign="right"
           value={name}
@@ -96,7 +100,7 @@ export default function Signup({ navigation }) {
       <View style={inputStyle(phone)}>
         <Ionicons name="call-outline" size={22} color="#555" />
         <TextInput
-          placeholder="ژمارا موبایلێ"
+          placeholder="Phone Number"
           keyboardType="phone-pad"
           style={styles.input}
           textAlign="right"
@@ -109,7 +113,7 @@ export default function Signup({ navigation }) {
       <View style={inputStyle(email)}>
         <Ionicons name="mail-outline" size={22} color="#555" />
         <TextInput
-          placeholder="ئێمێل"
+          placeholder="Gmail"
           keyboardType="email-address"
           autoCapitalize="none"
           style={styles.input}
@@ -123,7 +127,7 @@ export default function Signup({ navigation }) {
       <View style={inputStyle(password)}>
         <Ionicons name="lock-closed-outline" size={22} color="#555" />
         <TextInput
-          placeholder="وشا نهێنی"
+          placeholder="Password"
           secureTextEntry
           style={styles.input}
           textAlign="right"
@@ -134,17 +138,18 @@ export default function Signup({ navigation }) {
 
       {/* Password rules */}
       <View style={styles.rulesBox}>
-        <Rule ok={hasLetter} text="پیت هەبیت (A–Z / a–z)" />
-        <Rule ok={hasNumber} text="ژمارە هەبیت (0–9)" />
-        <Rule ok={hasSymbol} text="هێما هەبیت (@ $ ! %)" />
-        <Rule ok={hasLength} text="لایەنێ کێم 6 پیتا پێکبهێت" />
-      </View>
+  <Rule ok={hasLetter} text="Must contain a letter (A–Z / a–z)" />
+  <Rule ok={hasNumber} text="Must contain a number (0–9)" />
+  <Rule ok={hasSymbol} text="Must contain a symbol (@ $ ! %)" />
+  <Rule ok={hasLength} text="Must be at least 8 characters long" />
+</View>
+
 
       {/* Confirm */}
       <View style={inputStyle(confirm)}>
         <Ionicons name="refresh-outline" size={22} color="#555" />
         <TextInput
-          placeholder="دووبارە وشا نهێنی"
+          placeholder="Confirm Password"
           secureTextEntry
           style={styles.input}
           textAlign="right"
@@ -154,7 +159,7 @@ export default function Signup({ navigation }) {
       </View>
 
       <TouchableOpacity style={styles.signupBtn} onPress={handleSignup}>
-        <Text style={styles.signupText}>هەژمارێ دروست بکە</Text>
+        <Text style={styles.signupText}>Create Account</Text>
       </TouchableOpacity>
     </ScrollView>
   );

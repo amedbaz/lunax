@@ -93,26 +93,26 @@ export default function HomehollRellsrek({ navigation, route }) {
                 <Image source={require('../../../../assets/m202.png')} style={styles.avatar} />
 
                 <View style={styles.userTextBox}>
-
-                  <View style={styles.nameRow}>
-                    <Text style={styles.username}>Laptop Duhok</Text>
-                    <MaterialCommunityIcons
-                      name="check-decagram"
-                      size={20}
-                      color="#1DA1F2"
-                      style={{ marginLeft: 6 }}
-                      marginTop={-3}
-                    />
-                  </View>
-
-                  <Text
-                    style={styles.subText}
-                  >
-                    ئەگەر دەتەوێت باشترین لەپتۆپ بەدەستبهێنی لە دۆزینەوەکەتدا، کلیل لەسەر "زیاتر" بکە بۆ بینینی هەموو زانیارییەکان.
-
-                  </Text>
-
-                </View>
+               
+                                 <View style={styles.nameRow}>
+                                   <Text style={styles.username}>Name English Shop</Text>
+                                   <MaterialCommunityIcons
+                                     name="check-decagram"
+                                     size={20}
+                                     color="#1DA1F2"
+                                     style={{ marginLeft: 6 }}
+                                     marginTop={-3}
+                                   />
+                                 </View>
+               
+                                 <Text
+                                   style={styles.subText}
+                                 >
+                                   Description rells,Description rells,Description rells,Description rells,Description rells,Description rells,Description rells,
+               
+                                 </Text>
+               
+                               </View>
               </BlurView>
             </View>
           );

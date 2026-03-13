@@ -21,9 +21,9 @@ const videos = Array.from({ length: 10 }).map((_, i) => ({
   id: i + 1,
   play: require("../../../assets/vv.mp4"),
   wene1: require("../../../assets/m202.png"),
-  nav: `Laptop ${i + 1}`,
+  nav: `Name English ${i + 1}`,
   subt:
-    "ئەگەر دەتەوێت باشترین لەپتۆپ بەدەستبهێنی لە دۆزینەوەکەتدا، کلیل لەسەر 'زیاتر' بکە بۆ بینینی هەموو زانیارییەکان.",
+    "Description rells, Description rells, Description rells, Description rells,Description image and details,Description image and details,Description image and details,Description image and details,",
 }));
 
 export default function Rellsall() {

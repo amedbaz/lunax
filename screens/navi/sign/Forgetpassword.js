@@ -16,14 +16,16 @@ export default function ForgetPassword({ navigation }) {
 
   const handleSend = () => {
     if (!email) {
-      Alert.alert('هەڵە', 'هیڤیە ئیمێلێ خو داخل بکە');
+      Alert.alert('Error', 'Please enter your email'
+);
       return;
     }
 
-    Alert.alert(
-      'سەرکەفتی',
-      'پەیام بو ئیمێلێ تە هاتە هنارتن بو گهورینا وشا نهێنی'
-    );
+   Alert.alert(
+  'Success',
+  'A message has been sent to your email to reset your password.'
+);
+
 
     // لێرە دەتوانیت API / Firebase / Supabase بانگ بکەیت
   };
@@ -36,7 +38,7 @@ export default function ForgetPassword({ navigation }) {
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <Ionicons name="chevron-back" size={26} color="#000" />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>ژبیرچوونا وشەیا نهێنی</Text>
+        <Text style={styles.headerTitle}>Forget Password</Text>
         <View style={{ width: 26 }} />
       </View>
 
@@ -50,14 +52,15 @@ export default function ForgetPassword({ navigation }) {
         />
 
         <Text style={styles.desc}>
-         هیڤیە ئیمێلێ خو بنڤیسە،پەنچێ لسەر هنارتن بکە داکو دناڤا ئیمێلێ خودا وشەیەکا نوێ دروست بکەی
+        Please enter your email and tap Send to receive instructions to create a new password.
+
         </Text>
 
         {/* Email Input */}
         <View style={styles.inputRow}>
           <Ionicons name="at-outline" size={22} color="#555" />
           <TextInput
-            placeholder="ئیمەیڵ"
+            placeholder="Gmail"
             placeholderTextColor="#999"
             style={styles.input}
             textAlign="right"
@@ -70,7 +73,7 @@ export default function ForgetPassword({ navigation }) {
 
         {/* Send Button */}
         <TouchableOpacity style={styles.sendBtn} onPress={handleSend}>
-          <Text style={styles.sendText}>هنارتن</Text>
+          <Text style={styles.sendText}>Send</Text>
         </TouchableOpacity>
       </View>
 
